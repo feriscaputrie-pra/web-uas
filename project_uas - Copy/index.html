@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TK Bustanul Athfal 'Aisyiyah Pacitan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="images/logo.png">
+<!-- Status Intro Logo: dicek lebih awal agar tidak ada kedipan. Paksa tampil lagi: tambahkan ?intro=1 di alamat -->
+<script>
+(function(){
+  var r=document.documentElement,seen=false,force=/[?&]intro=1(&|$)/.test(location.search),skip=/[?&]intro=0(&|$)/.test(location.search);
+  try{seen=sessionStorage.getItem('baIntroSeen')==='1'}catch(e){}
+  if(!skip&&(force||!seen))r.classList.add('intro-active');
+})();
+</script>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="extras.css">
+</head>
+<body>
+
+<!-- Sprite Ikon SVG -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<symbol id="i-menu" viewBox="0 0 24 24"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></symbol>
+<symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+<symbol id="i-puzzle" viewBox="0 0 24 24"><path d="M15.39 4.39a1 1 0 0 0 1.68-.474 2.5 2.5 0 1 1 3.014 3.015 1 1 0 0 0-.474 1.68l1.683 1.682a2.414 2.414 0 0 1 0 3.414L19.61 15.39a1 1 0 0 1-1.68-.474 2.5 2.5 0 1 0-3.014 3.015 1 1 0 0 1 .474 1.68l-1.683 1.682a2.414 2.414 0 0 1-3.414 0L8.61 19.61a1 1 0 0 0-1.68.474 2.5 2.5 0 1 1-3.014-3.015 1 1 0 0 0 .474-1.68l-1.683-1.682a2.414 2.414 0 0 1 0-3.414L4.39 8.61a1 1 0 0 1 1.68.474 2.5 2.5 0 1 0 3.014-3.015 1 1 0 0 1-.474-1.68l1.683-1.682a2.414 2.414 0 0 1 3.414 0z"/></symbol>
+<symbol id="i-mosque" viewBox="0 0 24 24"><path d="M12 2v2"/><path d="M7 14a5 5 0 0 1 10 0"/><path d="M5 21v-7h14v7"/><path d="M10 21v-3a2 2 0 0 1 4 0v3"/><path d="M2 21V10l1.5-3L5 10v4"/><path d="M22 21V10l-1.5-3L19 10v4"/><path d="M2 21h20"/></symbol>
+<symbol id="i-palette" viewBox="0 0 24 24"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></symbol>
+<symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
+<symbol id="i-book" viewBox="0 0 24 24"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></symbol>
+<symbol id="i-music" viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></symbol>
+<symbol id="i-message" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+<symbol id="i-shapes" viewBox="0 0 24 24"><path d="M8.3 10a.7.7 0 0 1-.626-1.079L11.4 3a.7.7 0 0 1 1.198-.043L16.3 8.9a.7.7 0 0 1-.572 1.1Z"/><rect x="3" y="14" width="7" height="7" rx="1"/><circle cx="17.5" cy="17.5" r="3.5"/></symbol>
+<symbol id="i-tree" viewBox="0 0 24 24"><path d="m17 14 3 3.3a1 1 0 0 1-.7 1.7H4.7a1 1 0 0 1-.7-1.7L7 14h-.3a1 1 0 0 1-.7-1.7L9 9h-.2A1 1 0 0 1 8 7.3L12 3l4 4.3a1 1 0 0 1-.8 1.7H15l3 3.3a1 1 0 0 1-.7 1.7H17Z"/><path d="M12 22v-3"/></symbol>
+<symbol id="i-steth" viewBox="0 0 24 24"><path d="M11 2v2"/><path d="M5 2v2"/><path d="M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1"/><path d="M8 15a6 6 0 0 0 12 0v-3"/><circle cx="20" cy="10" r="2"/></symbol>
+<symbol id="i-grad" viewBox="0 0 24 24"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></symbol>
+<symbol id="i-mic" viewBox="0 0 24 24"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></symbol>
+<symbol id="i-bus" viewBox="0 0 24 24"><path d="M8 6v6"/><path d="M15 6v6"/><path d="M2 12h19.6"/><path d="M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3"/><circle cx="7" cy="18" r="2"/><path d="M9 18h5"/><circle cx="16" cy="18" r="2"/></symbol>
+<symbol id="i-trophy" viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></symbol>
+<symbol id="i-school" viewBox="0 0 24 24"><path d="M14 21v-3a2 2 0 0 0-4 0v3"/><path d="M18 5v16"/><path d="m4 6 7.106-3.79a2 2 0 0 1 1.788 0L20 6"/><path d="m6 11-3.52 2.147a1 1 0 0 0-.48.854V19a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5a1 1 0 0 0-.48-.853L18 11"/><path d="M6 5v16"/><circle cx="12" cy="9" r="2"/></symbol>
+<symbol id="i-user" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+<symbol id="i-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+<symbol id="i-instagram" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></symbol>
+<symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+<symbol id="i-youtube" viewBox="0 0 24 24"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><polygon points="10 15 15 12 10 9 10 15"/></symbol>
+</defs></svg>
+
+<!-- Opening Screen Logo -->
+<div class="intro" id="intro" aria-label="Memuat TK Bustanul Athfal 'Aisyiyah Pacitan">
+  <div class="intro-inner">
+    <img class="intro-logo" id="introLogo" src="images/logo.png" alt="Logo TK Bustanul Athfal 'Aisyiyah Pacitan">
+    <span class="intro-line"></span>
+    <p class="intro-name">TK Bustanul Athfal 'Aisyiyah Pacitan</p>
+    <p class="intro-sub">Pendidikan Anak Usia Dini</p>
+  </div>
+  <button type="button" class="intro-skip" id="introSkip">Lewati</button>
+</div>
+
+<!-- ==========================================
+     1. NAVBAR HIJAU
+========================================== -->
+<header class="header">
+  <div class="wrap nav">
+    <a href="#home" class="brand">
+      <img src="images/logo.png" alt="Logo" class="logo">
+      <span>
+        <small>Pendidikan Anak Usia Dini</small>
+        <strong>TK BUSTANUL ATHFAL 'AISYIYAH PACITAN</strong>
+      </span>
+    </a>
+    <button class="burger" id="burger" aria-label="Buka menu" aria-expanded="false">
+      <svg class="i i-menu" aria-hidden="true" focusable="false"><use href="#i-menu"/></svg>
+      <svg class="i i-x" aria-hidden="true" focusable="false"><use href="#i-x"/></svg>
+    </button>
+    <nav id="menu" class="menu">
+      <a href="#home">Home</a>
+      <div class="has-sub">
+        <a href="#profil">Profil</a>
+        <div class="sub">
+          <a href="#profil">Sambutan</a>
+          <a href="#sejarah">Sejarah</a>
+          <a href="#visi">Visi &amp; Misi</a>
+          <a href="#guru">Guru &amp; Staf</a>
+        </div>
+      </div>
+      <a href="#program">Program</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#ppdb">PPDB</a>
+      <a href="#kontak">Kontak</a>
+      <a href="#ppdb" class="btn-nav-daftar">Daftar Sekarang</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- ==========================================
+       2. HERO BESAR DENGAN FOTO, JUDUL & SLIDER TITIK
+  ========================================== -->
+  <section class="hero-section">
+    <div class="wrap">
+      <div id="home" class="hero-card">
+        <div class="hero-slides" aria-hidden="true">
+          <div class="hs active" style="background-image:url('images/slide1.jpeg')"></div>
+          <div class="hs" style="background-image:url('images/slide2.jpeg')"></div>
+          <div class="hs" style="background-image:url('images/slide3.jpeg')"></div>
+          <div class="hs" style="background-image:url('images/slide4.jpeg')"></div>
+        </div>
+        <div class="hero-content">
+          <h1>MEMBENTUK GENERASI<br>CERDAS &amp; BERAKHLAK</h1>
+          <p class="lead-l">Pendidikan anak usia dini yang menumbuhkan generasi berakhlak, mandiri, cerdas, kreatif, dan ceria melalui metode belajar sambil bermain.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       3. SAMBUTAN KEPALA SEKOLAH
+  ========================================== -->
+  <section id="profil" class="sec">
+    <div class="wrap">
+      <div class="sambutan-grid">
+        <div class="kepala-box">
+          <div class="guru-frame kepala-frame">
+            <div class="guru-photo">
+              <img src="images/kepala-sekolah.png" alt="Kepala Sekolah TK Bustanul Athfal" onerror="this.src='images/logo.png'">
+            </div>
+          </div>
+          <span class="kepala-badge">Ir. Pakde Solo</span>
+        </div>
+        <div class="sambutan-text">
+          <h2>Sambutan <span>Kepala Sekolah</span></h2>
+          <p>Pendidikan anak usia dini merupakan fondasi penting dalam perjalanan hidup anak. Di TK Bustanul Athfal, kami berkomitmen menciptakan lingkungan belajar yang aman, menyenangkan, dan penuh kasih sayang. Kami percaya bahwa setiap anak memiliki potensi unik yang patut dikembangkan. Melalui metode saintifik serta Learning Through Play, kami menanamkan nilai-nilai keagamaan, kemandirian anak sejak dini agar mereka siap melangkah ke masa depan dengan percaya diri.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       4. SEJARAH SINGKAT
+  ========================================== -->
+  <section id="sejarah" class="sec">
+    <div class="wrap">
+      <div class="badge-pill badge-orange">Sejarah Singkat</div>
+      <div class="sejarah-timeline">
+        <article class="sj-item">
+          <span class="sj-year">1917</span>
+          <div class="sj-box">
+            <h3>Berdirinya ‘Aisyiyah</h3>
+            <p>Gerakan Bustanul Athfal bermula dari ‘Aisyiyah, organisasi perempuan Muhammadiyah yang berdiri pada tahun 1917.</p>
+          </div>
+        </article>
+        <article class="sj-item">
+          <span class="sj-year">1919</span>
+          <div class="sj-box">
+            <h3>Pendidikan Anak Usia Dini Pertama</h3>
+            <p>‘Aisyiyah membuka pendidikan anak usia dini yang saat itu bernama Frobel, dikenal sebagai taman kanak-kanak pertama yang didirikan bangsa Indonesia.</p>
+          </div>
+        </article>
+        <article class="sj-item">
+          <span class="sj-year">1973</span>
+          <div class="sj-box">
+            <h3>Nama Diseragamkan &amp; Berdirinya TK Pacitan</h3>
+            <p>Nama lembaga diseragamkan menjadi TK ‘Aisyiyah Bustanul Athfal. Pada 13 Maret 1973, TK Bustanul Athfal ‘Aisyiyah Pacitan berdiri, dirintis oleh para pengurus awal ‘Aisyiyah Pacitan di bawah naungan Pimpinan Daerah ‘Aisyiyah Kabupaten Pacitan.</p>
+          </div>
+        </article>
+        <article class="sj-item">
+          <span class="sj-year">sekarang</span>
+          <div class="sj-box">
+            <h3>Program Madrasah Unggul</h3>
+            <p>Kegiatan belajar berlangsung di dua gedung, yaitu Jl. H. Samanhudi No.05 dan Jl. K.H. Dimyati No.19, Pacitan, dengan Program Madrasah Unggul: Unggul Religius, Unggul Kreatifitas, dan Unggul Genius. Bersama para pendidik dan orang tua, sekolah berkomitmen mewujudkan generasi yang berakhlak mulia, sehat, mandiri, cerdas, dan kreatif.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       5. TIGA KOTAK INFO
+  ========================================== -->
+  <section id="info" class="sec">
+    <div class="wrap">
+      <div class="info-grid">
+        <!-- Kolom 1 & 2 dalam satu pembungkus dengan bar di bawahnya -->
+        <div class="info-col-1-2">
+          <div class="info-subgrid">
+            <div class="info-item">
+              <div class="info-header">Berdiri Sejak</div>
+              <div class="info-body info-body-year">
+                <strong>13 Maret</strong>
+                <span>1973</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-header">Gedung Pembelajaran</div>
+              <div class="info-body info-body-gedung">
+                <strong>Gedung 1</strong>
+                <small>Jl. H. Samanhudi No.05 Pacitan</small>
+                <strong>Gedung 2</strong>
+                <small>Jl. K.H. Dimyati No.19 Pacitan</small>
+              </div>
+            </div>
+          </div>
+          <div class="info-bottom-bar">TK Bustanul 'Athfal Aisyiyah</div>
+        </div>
+
+        <!-- Kolom 3: Program Unggulan Madrasah -->
+        <div class="info-col3" id="program">
+          <div class="info-header">Program Unggulan Madrasah</div>
+          <div class="info-body-col3">
+            <p><strong>- Penguatan Karakter</strong><br>Islam &amp; Keislaman/Kemuhammadiyahan</p>
+            <p><strong>- Pembelajaran Holistik Berbasis "Merdeka Bermain"</strong><br>(Learning through Play)</p>
+            <p><strong>- Kemandirian, Seni, dan Bakat Anak</strong><br>(Life Skills &amp; Talents)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       6. RANGKAIAN PRESTASI
+  ========================================== -->
+  <section id="prestasi" class="sec">
+    <div class="wrap">
+      <div class="prestasi-box">
+        <div class="prestasi-content">
+          <div class="badge-pill badge-orange">Rangkaian Prestasi :</div>
+          <ul class="prestasi-list">
+            <li>Juara 1 Tingkat Kabupaten Lomba Inovasi Guru Tingkat TK/RA/BA se-Kabupaten Pacitan</li>
+            <li>Memperoleh 27 medali emas dalam kompetisi marching band se-Jawa Timur</li>
+            <li>Peringkat 2 Lomba Lingkungan Sekolah Sehat jenjang TK/RA se-Kabupaten Pacitan Tahun 2024</li>
+            <li>Juara Harapan 1 Lomba Video Profil PAUD Tingkat Jawa Timur diselenggarakan oleh BGP Jatim</li>
+            <li>Penghargaan 100 besar PAUD Inovatif se-Indonesia dalam rangka Jambore Guru Hebat Tahun 2024</li>
+            <li>Juara 1 Lomba Fashion Show Kategori TK &amp; Juara 1 Lomba Carnival Kategori Umum</li>
+            <li>Juara 1 Lomba Tahfidz Online Tingkat Anak</li>
+          </ul>
+        </div>
+        <div class="prestasi-photo">
+          <img src="images/anak-prestasi.png" alt="Siswa Berprestasi" onerror="this.style.display='none'">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       7. VISI DAN MISI
+  ========================================== -->
+  <section id="visi" class="sec">
+    <div class="wrap">
+      <div class="visi-misi-grid">
+        <div class="visi-card">
+          <h3 class="card-title-teal">VISI</h3>
+          <p class="visi-text">Mewujudkan generasi yang berakhlak mulia, sehat, mandiri, cerdas dan kreatif.</p>
+        </div>
+        <div class="misi-card">
+          <h3 class="card-title-teal">MISI</h3>
+          <ul class="misi-list">
+            <li>Membiasakan perilaku islami dalam kehidupan sehari-hari</li>
+            <li>Membiasakan hidup sehat</li>
+            <li>Mengembangkan kemandirian anak melalui kegiatan life skill</li>
+            <li>Melatih dan mengembangkan kecerdasan anak dalam berpikir kritis</li>
+            <li>Menerapkan pembelajaran berbasis IT</li>
+            <li>Menyelenggarakan pembelajaran kreatif dan menyenangkan</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       8. SASARAN KUALITAS DAN AGENDA RUTIN
+  ========================================== -->
+  <section id="sasaran" class="sec">
+    <div class="wrap">
+      <!-- Kartu Sasaran Kualitas -->
+      <div class="sasaran-card">
+        <div class="badge-pill badge-orange">SASARAN KUALITAS</div>
+        <ul class="two-cols-list">
+          <li>Siap bersekolah</li>
+          <li>Terbiasa dengan ibadah dan doa sehari-hari</li>
+          <li>Mengenal Allah dan Rasul-Nya</li>
+          <li>Mengenal dasar-dasar literasi dan numerasi</li>
+          <li>Pembiasaan akhlak islami</li>
+          <li>Tuntas perkembangan anak sesuai usianya</li>
+          <li>Mengenal bakti terhadap orang tua</li>
+          <li>Terbiasa dengan kalimat thoyibah</li>
+        </ul>
+      </div>
+
+      <!-- Kartu Agenda Rutin -->
+      <div class="agenda-card" id="agenda">
+        <div class="badge-pill badge-teal">AGENDA RUTIN</div>
+        <ul class="two-cols-list">
+          <li>Mengaji dan Hafalan</li>
+          <li>Outing Class sesuai tema/topik</li>
+          <li>Pentas seni dan pameran karya</li>
+          <li>Pemeriksaan Kesehatan dan Deteksi Dini (DDTK)</li>
+          <li>Projek Standar Kecakapan Ubudiah dan Akhlakul Karimah (SKUA)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SECTION: PROFIL GURU & STAF
+  ========================================== -->
+  <section id="guru" class="sec">
+    <div class="wrap">
+      <h2 class="sr-only">Profil Guru dan Staf</h2>
+      <div class="badge-pill badge-teal">GURU &amp; STAF</div>
+      <p class="guru-intro">Tim pendidik kami siap mendampingi tumbuh kembang setiap anak dengan penuh kasih sayang.</p>
+
+      <div class="guru-grid">
+        <!-- Kartu 1 -->
+        <article class="guru-card">
+          <div class="guru-frame">
+            <div class="guru-photo">
+              <span class="guru-placeholder" aria-hidden="true">
+                <svg class="i guru-placeholder-ico" focusable="false"><use href="#i-user"/></svg>
+              </span>
+              <img src="images/guru-1.jpg" alt="Foto [Nama Guru 1], Guru Kelas A" loading="lazy" onload="this.parentElement.classList.add('has-photo')" onerror="this.remove()">
+            </div>
+          </div>
+          <h3 class="guru-nama">[Nama Guru 1]</h3>
+          <span class="guru-jabatan">Guru Kelas A</span>
+        </article>
+
+        <!-- Kartu 2 -->
+        <article class="guru-card">
+          <div class="guru-frame">
+            <div class="guru-photo">
+              <span class="guru-placeholder" aria-hidden="true">
+                <svg class="i guru-placeholder-ico" focusable="false"><use href="#i-user"/></svg>
+              </span>
+              <img src="images/guru-2.jpg" alt="Foto [Nama Guru 2], Guru Kelas B" loading="lazy" onload="this.parentElement.classList.add('has-photo')" onerror="this.remove()">
+            </div>
+          </div>
+          <h3 class="guru-nama">[Nama Guru 2]</h3>
+          <span class="guru-jabatan">Guru Kelas B</span>
+        </article>
+
+        <!-- Kartu 3 -->
+        <article class="guru-card">
+          <div class="guru-frame">
+            <div class="guru-photo">
+              <span class="guru-placeholder" aria-hidden="true">
+                <svg class="i guru-placeholder-ico" focusable="false"><use href="#i-user"/></svg>
+              </span>
+              <img src="images/guru-3.jpg" alt="Foto [Nama Guru 3], Guru Kelompok Bermain" loading="lazy" onload="this.parentElement.classList.add('has-photo')" onerror="this.remove()">
+            </div>
+          </div>
+          <h3 class="guru-nama">[Nama Guru 3]</h3>
+          <span class="guru-jabatan">Guru Kelompok Bermain</span>
+        </article>
+
+        <!-- Kartu 4 -->
+        <article class="guru-card">
+          <div class="guru-frame">
+            <div class="guru-photo">
+              <span class="guru-placeholder" aria-hidden="true">
+                <svg class="i guru-placeholder-ico" focusable="false"><use href="#i-user"/></svg>
+              </span>
+              <img src="images/guru-4.jpg" alt="Foto [Nama Guru 4], Guru Pendamping" loading="lazy" onload="this.parentElement.classList.add('has-photo')" onerror="this.remove()">
+            </div>
+          </div>
+          <h3 class="guru-nama">[Nama Guru 4]</h3>
+          <span class="guru-jabatan">Guru Pendamping</span>
+        </article>
+
+        <!-- Kartu 5 -->
+        <article class="guru-card">
+          <div class="guru-frame">
+            <div class="guru-photo">
+              <span class="guru-placeholder" aria-hidden="true">
+                <svg class="i guru-placeholder-ico" focusable="false"><use href="#i-user"/></svg>
+              </span>
+              <img src="images/guru-5.jpg" alt="Foto [Nama Guru 5], Guru Pendamping" loading="lazy" onload="this.parentElement.classList.add('has-photo')" onerror="this.remove()">
+            </div>
+          </div>
+          <h3 class="guru-nama">[Nama Guru 5]</h3>
+          <span class="guru-jabatan">Guru Pendamping</span>
+        </article>
+
+        <!-- Kartu 6 -->
+        <article class="guru-card">
+          <div class="guru-frame">
+            <div class="guru-photo">
+              <span class="guru-placeholder" aria-hidden="true">
+                <svg class="i guru-placeholder-ico" focusable="false"><use href="#i-user"/></svg>
+              </span>
+              <img src="images/guru-6.jpg" alt="Foto [Nama Guru 6], Guru Al-Qur'an &amp; Karakter" loading="lazy" onload="this.parentElement.classList.add('has-photo')" onerror="this.remove()">
+            </div>
+          </div>
+          <h3 class="guru-nama">[Nama Guru 6]</h3>
+          <span class="guru-jabatan">Guru Al-Qur'an &amp; Karakter</span>
+        </article>
+
+        <!-- Kartu 7 -->
+        <article class="guru-card">
+          <div class="guru-frame">
+            <div class="guru-photo">
+              <span class="guru-placeholder" aria-hidden="true">
+                <svg class="i guru-placeholder-ico" focusable="false"><use href="#i-user"/></svg>
+              </span>
+              <img src="images/guru-7.jpg" alt="Foto [Nama Guru 7], Staf Tata Usaha" loading="lazy" onload="this.parentElement.classList.add('has-photo')" onerror="this.remove()">
+            </div>
+          </div>
+          <h3 class="guru-nama">[Nama Guru 7]</h3>
+          <span class="guru-jabatan">Staf Tata Usaha</span>
+        </article>
+
+        <!-- Kartu 8 -->
+        <article class="guru-card">
+          <div class="guru-frame">
+            <div class="guru-photo">
+              <span class="guru-placeholder" aria-hidden="true">
+                <svg class="i guru-placeholder-ico" focusable="false"><use href="#i-user"/></svg>
+              </span>
+              <img src="images/guru-8.jpg" alt="Foto [Nama Guru 8], Penjaga Sekolah" loading="lazy" onload="this.parentElement.classList.add('has-photo')" onerror="this.remove()">
+            </div>
+          </div>
+          <h3 class="guru-nama">[Nama Guru 8]</h3>
+          <span class="guru-jabatan">Penjaga Sekolah</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       9. INFORMASI AKADEMIK (TABEL)
+  ========================================== -->
+  <section id="akademik" class="sec">
+    <div class="wrap">
+      <div class="badge-pill badge-orange">INFORMASI AKADEMIK</div>
+      <div class="akademik-table-wrap">
+        <table class="akademik-table">
+          <thead>
+            <tr>
+              <th>WAKTU</th>
+              <th>KEGIATAN</th>
+              <th>KETERANGAN</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>07.00 – 07.30</td>
+              <td>Kedatangan &amp; pembiasaan</td>
+              <td>Menyambut anak, pembiasaan senyum salam sapa, dan doa pagi</td>
+            </tr>
+            <tr>
+              <td>07.30 – 09.00</td>
+              <td>Kegiatan pembelajaran</td>
+              <td>Sentra / area bermain edukatif &amp; pembelajaran aktif</td>
+            </tr>
+            <tr>
+              <td>09.00 – 09.30</td>
+              <td>Istirahat &amp; makan bersama</td>
+              <td>Cuci tangan, makan bekal sehat bersama, &amp; bermain bebas</td>
+            </tr>
+            <tr>
+              <td>09.30 – 10.00</td>
+              <td>Penutup &amp; doa pulang</td>
+              <td>Evaluasi kegiatan harian, bernyanyi, doa, &amp; penjemputan</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       10. GALERI KEGIATAN (GRID 3 KOLOM)
+  ========================================== -->
+  <section id="galeri" class="sec">
+    <div class="wrap">
+      <div class="badge-pill badge-orange">GALERI KEGIATAN</div>
+      <div class="galeri-grid">
+        <button type="button" class="g g1" aria-label="Perbesar foto: Kegiatan belajar">
+          <img src="images/galeri-1.jpg" alt="Kegiatan belajar" loading="lazy" onload="this.parentElement.classList.add('has-photo')" onerror="this.remove()">
+          <span class="g-ico"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-grad"/></svg></span>
+          <span class="g-cap">Kegiatan Belajar</span>
+        </button>
+        <button type="button" class="g g2" aria-label="Perbesar foto: Kreasi seni">
+          <img src="images/galeri-2.jpg" alt="Kreasi seni" loading="lazy" onload="this.parentElement.classList.add('has-photo')" onerror="this.remove()">
+          <span class="g-ico"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-palette"/></svg></span>
+          <span class="g-cap">Kreasi Seni</span>
+        </button>
+        <button type="button" class="g g3" aria-label="Perbesar foto: Mengaji dan hafalan">
+          <img src="images/galeri-3.jpg" alt="Mengaji dan hafalan" loading="lazy" onload="this.parentElement.classList.add('has-photo')" onerror="this.remove()">
+          <span class="g-ico"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-book"/></svg></span>
+          <span class="g-cap">Mengaji &amp; Hafalan</span>
+        </button>
+        <button type="button" class="g g4" aria-label="Perbesar foto: Pentas seni">
+          <img src="images/galeri-4.jpg" alt="Pentas seni" loading="lazy" onload="this.parentElement.classList.add('has-photo')" onerror="this.remove()">
+          <span class="g-ico"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-mic"/></svg></span>
+          <span class="g-cap">Pentas Seni</span>
+        </button>
+        <button type="button" class="g g5" aria-label="Perbesar foto: Outing class">
+          <img src="images/galeri-5.jpg" alt="Outing class" loading="lazy" onload="this.parentElement.classList.add('has-photo')" onerror="this.remove()">
+          <span class="g-ico"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-bus"/></svg></span>
+          <span class="g-cap">Outing Class</span>
+        </button>
+        <button type="button" class="g g6" aria-label="Perbesar foto: Lomba dan prestasi">
+          <img src="images/galeri-6.jpg" alt="Lomba dan prestasi" loading="lazy" onload="this.parentElement.classList.add('has-photo')" onerror="this.remove()">
+          <span class="g-ico"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-trophy"/></svg></span>
+          <span class="g-cap">Lomba &amp; Prestasi</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       11. TESTIMONI ORANG TUA
+  ========================================== -->
+  <section id="testimoni" class="sec">
+    <div class="wrap">
+      <div class="badge-pill badge-orange">TESTIMONI ORANG TUA</div>
+      <div class="testimoni-list">
+        <blockquote class="testimoni-card">
+          <p>"Alhamdulillah, anak saya sangat senang dan antusias bersekolah di TK 'Aisyiyah. Guru-gurunya sangat sabar, ramah, dan telaten membimbing anak-anak."</p>
+          <cite>— Bunda Alvaro (Kelompok B)</cite>
+        </blockquote>
+        <blockquote class="testimoni-card">
+          <p>"Metode belajarnya sangat menyenangkan dan menumbuhkan rasa percaya diri anak. Pembiasaan sholat dan doa hariannya terbawa sampai di rumah."</p>
+          <cite>— Ayah Rayyan (Kelompok A)</cite>
+        </blockquote>
+        <blockquote class="testimoni-card">
+          <p>"Fasilitas sekolah lengkap dan lingkungannya sangat aman serta nyaman. Anak saya jadi lebih mandiri, kreatif, dan berakhlak baik."</p>
+          <cite>— Bunda Zaskia (Kelompok Bermain)</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       12. LOKASI (PETA + TOMBOL LINK PENDAFTARAN)
+  ========================================== -->
+  <section id="lokasi" class="sec">
+    <div class="wrap">
+      <div class="lokasi-box">
+        <div class="lokasi-map">
+          <iframe title="Peta Lokasi TK 'Aisyiyah Pacitan" loading="lazy" src="https://maps.google.com/maps?q=TK+Bustanul+Athfal+Aisyiyah+Pacitan&hl=id&z=16&output=embed"></iframe>
+        </div>
+        <div class="lokasi-info">
+          <h3>Lokasi Kami</h3>
+          <p>
+            <strong>Gedung 1:</strong> Jl. H. Samanhudi No.05, Pacitan.<br>
+            <strong>Gedung 2:</strong> Jl. K.H. Dimyati No.19, Pacitan.
+          </p>
+          <a class="btn-pendaftaran" href="#ppdb">LINK PENDAFTARAN</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ==========================================
+     13. FOOTER HIJAU
+========================================== -->
+<footer id="kontak" class="footer-teal">
+  <div class="wrap">
+    <div class="footer-brand">
+      <img src="images/logo.png" alt="Logo">
+      <span>TK BUSTANUL ATHFAL 'AISYIYAH PACITAN</span>
+    </div>
+    <div class="footer-socials">
+      <a href="https://www.facebook.com/profile.php?id=100068854965582" target="_blank" rel="noopener" class="soc-btn" aria-label="Facebook"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-facebook"/></svg></a>
+      <a href="https://instagram.com/bustanul_athfal_aisyiyah" target="_blank" rel="noopener" class="soc-btn" aria-label="Instagram"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-instagram"/></svg></a>
+      <a href="https://wa.me/+6285648409001" target="_blank" rel="noopener" class="soc-btn" aria-label="WhatsApp"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-whatsapp"/></svg></a>
+      <a href="https://www.youtube.com/@baaisyiyahpacitan644" target="_blank" rel="noopener" class="soc-btn" aria-label="YouTube"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-youtube"/></svg></a>
+    </div>
+    <p class="footer-copy">© <span id="year"></span> TK Bustanul Athfal 'Aisyiyah Pacitan. Hak cipta dilindungi.</p>
+  </div>
+</footer>
+
+<!-- PPDB MODAL POPUP (Mempertahankan fungsi form JavaScript & WhatsApp) -->
+<div id="ppdb" class="modal-overlay">
+  <div class="modal-content">
+    <a href="#close-modal" class="modal-close" aria-label="Tutup formulir">&times;</a>
+    <h3 style="color:var(--teal);font-size:1.4rem;font-weight:900;margin-bottom:12px">Formulir Pendaftaran PPDB</h3>
+    <p style="font-size:0.9rem;color:var(--ink-soft);margin-bottom:18px">Isi formulir di bawah ini untuk pendaftaran langsung via WhatsApp atau klik tombol pendaftaran resmi.</p>
+    
+    <form id="form" class="form" novalidate>
+      <label>Nama lengkap anak
+        <input type="text" id="nama" placeholder="Contoh: Muhammad Farhan">
+        <em></em>
+      </label>
+      <label>Tanggal lahir anak
+        <input type="date" id="lahir">
+        <em></em>
+      </label>
+      <label>Program
+        <select id="program-pilih">
+          <option value="">Pilih program</option>
+          <option>Kelas Adaptasi (KB)</option>
+          <option>Kelompok A (Reguler)</option>
+          <option>Kelompok B (Reguler)</option>
+        </select>
+        <em></em>
+      </label>
+      <label>Nama orang tua / wali
+        <input type="text" id="ortu" placeholder="Nama ayah / ibu">
+        <em></em>
+      </label>
+      <label>Nomor WhatsApp
+        <input type="tel" id="hp" placeholder="Contoh: 00123456">
+        <em></em>
+      </label>
+      <button class="btn btn-form-gold" type="submit">Kirim via WhatsApp</button>
+      <a class="btn btn-form-link" href="https://clik.now/SPMBBAAPCT2627" target="_blank" rel="noopener">Buka Link Pendaftaran Resmi (Google Form)</a>
+      <p id="ok" class="ok" hidden></p>
+    </form>
+  </div>
+</div>
+
+<!-- Lightbox Galeri -->
+<div class="lightbox" id="lightbox" hidden>
+  <button id="close" aria-label="Tutup"><svg class="i" aria-hidden="true" focusable="false"><use href="#i-x"/></svg></button>
+  <div id="lb"></div>
+</div>
+
+<script src="script.js"></script>
+<script>
+// Tutup modal PPDB saat mengklik area luar modal
+document.querySelectorAll('.modal-overlay').forEach(function(m){
+  m.addEventListener('click', function(e){
+    if(e.target === m) {
+      location.hash = '#close-modal';
+      if(history.replaceState) history.replaceState(null, null, ' ');
+    }
+  });
+});
+</script>
+<script src="admin-access.js"></script>
+</body>
+</html>
